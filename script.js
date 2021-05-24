@@ -1,4 +1,9 @@
 document.getElementById("check").checked = localStorage.getItem("isTipsDisabled") === "true";
+document.getElementById("close-button").addEventListener("click", CloseButton);
+document.getElementById("left-arrow").addEventListener("click", LeftArrowClick);
+document.getElementById("right-arrow").addEventListener("click", RightArrowClick);
+document.getElementById("check").addEventListener("click", changeCheckBox);
+
 let quotes = ["List of available countries in 2021: Spain, Greece, Egypt, Switzerland, Turkey, Cyprus ...",
     "Remember to bring your medical mask !!!",
     "The top 4 safest airlines: Qantas Airways, Qatar Airways, Air New Zealand, Singapore Airlines",
@@ -37,14 +42,12 @@ function RightArrowClick() {
 
 function createNavigationList() {
     let list = document.getElementById("tip");
-
     for (let i = 0; i < quotes.length; i++) {
         let element = document.createElement("li");
         element.setAttribute("id", i);
         element.setAttribute("onclick", "onTips(this)")
         list.appendChild(element);
     }
-
     navigationList = document.querySelectorAll("#tip li");
 }
 
