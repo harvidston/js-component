@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: "Foglihten"; 
-  src: url("fonts/Foglihten.ttf") format("truetype"); 
+  src: url('fonts/Foglihten.ttf') format("truetype"); 
   font-style: normal; 
   font-weight: normal; 
 } 
