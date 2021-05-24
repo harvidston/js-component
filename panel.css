@@ -1,0 +1,117 @@
+@font-face {
+    font-family: "Mont"; 
+    src: url("../fonts/Mont.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+@font-face {
+    font-family: "Mont"; 
+    src: url("../fonts/Mont.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+.btn{
+    border: none;
+    color: black;
+}
+
+.btn:hover{
+    opacity: 60%;
+    transition: .5s;
+ }
+
+.left-arrow{
+    background-color: #142129;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: lighter;
+    color: white;
+
+    margin-left: 170px;
+    margin-right: 6px;
+}
+
+.right-arrow{
+    background-color: #142129;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+
+    /* margin-right: 10px; */
+}
+
+.tips {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+
+}
+
+.tips li {
+    width: 10px;
+    height: 10px;
+    background: rgba(96, 121, 123, 0.22);
+    display: inline-block;
+    border-radius: 5px;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.tips li.chosen {
+    background: white;
+}
+
+.component {
+    width: 400px;
+    height: 140px;
+    background: #142129;
+    position: fixed;
+    right: 50px;
+    top: 20px;
+    padding: 10px 10px 10px 10px;
+    border: solid 8px rgba(96, 121, 123, 0.22);
+}
+
+.close-button {
+    position: absolute;
+    font-size: 110%;
+    top: 0;
+    color: white;
+    right: 0;
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    font-family: "Mont";
+}
+
+p {
+    text-align: center;
+}
+
+.component-title{
+    text-align: center;
+    font-family: "Foglihten"; 
+
+    font-size: 18px;
+    color: #fff ;
+}
+.bottom-panel{
+    color: white;
+    font-family: "Mont";
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+}
+.advice{
+    font-family: "Mont";
+    color: white;
+
+    margin-top: 30px;
+    
+}
